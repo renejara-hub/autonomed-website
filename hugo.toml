@@ -1,0 +1,7 @@
+baseURL = 'https://autonomed.cl'
+languageCode = 'es-cl'
+title = 'AUTONOMED'
+
+[module]
+  [[module.imports]]
+    path = "github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify"
