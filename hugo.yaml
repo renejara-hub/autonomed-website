@@ -1,0 +1,12 @@
+# Hugo configuration file
+# This file is merged with the config in config/_default/
+
+module:
+  imports:
+    - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify
+    - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind
+
+# Language
+languageCode: es-cl
+
+# Site title and other params will be taken from config/_default/config.yaml
