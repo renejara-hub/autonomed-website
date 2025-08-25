@@ -1,39 +1,26 @@
-yaml# Enlaces de Navegación
-
+# Navigation Links
 main:
   - name: Inicio
     url: /
     weight: 10
-    
   - name: Investigación
     url: /investigacion/
     weight: 20
-    
   - name: Directorio
     url: /directorio/
     weight: 30
-    
   - name: Análisis
     url: /analisis/
     weight: 40
-    
   - name: Datos
     url: /datos/
     weight: 50
-    
   - name: Publicaciones
     url: /publicaciones/
     weight: 60
-    
   - name: Equipo
     url: /equipo/
     weight: 70
-    
   - name: Contacto
     url: /contacto/
     weight: 80
-
-# Enlace a CV/Resume (descomentado si necesitas)
-#  - name: CV
-#    url: uploads/resume.pdf
-#    weight: 90
