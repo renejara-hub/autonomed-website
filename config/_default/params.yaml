@@ -1,108 +1,12 @@
-yaml# Apariencia visual
+# Tema
 appearance:
   theme_day: minimal
   theme_night: minimal
   font: native
-  font_size: M
 
-# SEO
-marketing:
-  seo:
-    site_type: Organization
-    local_business_type: EducationalOrganization
-    org_name: AUTONOMED
-    description: 'Investigación sobre ecosistemas de medios nativos digitales en Chile'
-    twitter: 'autonomed_cl'
-  analytics:
-    google_analytics: ''
-    google_tag_manager: ''
-  verification:
-    google: ''
-    baidu: ''
-
-# Header del sitio
-header:
-  navbar:
-    enable: true
-    align: c
-    show_logo: true
-    show_language: false
-    show_day_night: true
-    show_search: true
-    highlight_active_link: true
-
-# Footer del sitio
-footer:
-  copyright:
-    notice: '© 2025 AUTONOMED. Investigación académica sobre medios digitales en Chile.'
-    license:
-      enable: true
-      allow_derivatives: false
-      share_alike: true
-      allow_commercial: false
-
-# Localización
-locale:
-  date_format: '2 de January, 2006'
-  time_format: '15:04'
-
-# Repositorio
-edit_page:
-  repo_url: 'https://github.com/renejara-hub/autonomed-website'
-  content_dir: 'content'
-  repo_branch: 'main'
-  editable:
-    page: false
-    post: false
-    book: false
-
-# Búsqueda
-search:
-  provider: wowchemy
-  algolia:
-    app_id: ''
-    api_key: ''
-    index_name: ''
-    show_logo: false
-
-# Proveedor de mapas
-map:
-  provider: 'mapnik'
-  api_key: ''
-  zoom: 15
-
-# Enlaces de contacto
+# Contacto
 contact_links:
-  - icon: twitter
-    icon_pack: fab
-    name: Síguenos en Twitter
-    link: 'https://twitter.com/autonomed_cl'
   - icon: envelope
     icon_pack: fas
-    name: Envía un email
+    name: Email
     link: 'mailto:contacto@autonomed.cl'
-  - icon: github
-    icon_pack: fab
-    name: Revisa el código
-    link: 'https://github.com/renejara-hub/autonomed-website'
-
-# Funcionalidades del sitio
-features:
-  syntax_highlighter:
-    theme_light: github
-    theme_dark: dracula
-  math:
-    enable: true
-  privacy_pack:
-    enable: false
-  repository:
-    url: 'https://github.com/renejara-hub/autonomed-website'
-    content_dir: content
-    branch: main
-  comment:
-    provider: ''
-  search:
-    provider: wowchemy
-  map:
-    provider: mapnik
-    zoom: 15
