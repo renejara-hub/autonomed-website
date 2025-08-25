@@ -1,80 +1,36 @@
-yaml# Archivo de configuración Hugo - AUTONOMED
-title: 'AUTONOMED'
+# Hugo configuration
 baseURL: 'https://autonomed.cl'
+title: 'AUTONOMED'
 copyright: '© 2025 AUTONOMED - Ecosistemas de Medios Digitales Chile'
 
-# Configuración de idioma
+# Language
 defaultContentLanguage: 'es'
-hasCJKLanguage: false
-defaultContentLanguageInSubdir: false
-removePathAccents: true
+languageCode: 'es-cl'
 
-# Configuración de construcción
+module:
+  imports:
+    - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify
+    - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind
+
+# Taxonomies
+taxonomies:
+  tag: tags
+  category: categories
+  author: authors
+
+# Build
 paginate: 10
 enableEmoji: true
 enableRobotsTXT: true
-footnotereturnlinkcontents: <sup>^</sup>
-ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
-permalinks:
-  authors: '/autor/:slug/'
-  tags: '/etiqueta/:slug/'
-  categories: '/categoria/:slug/'
-  publication_types: '/tipo-publicacion/:slug/'
 
-# Taxonomías
-taxonomies:
-  tag: etiquetas
-  category: categorias
-  publication_type: tipos_publicacion
-  author: autores
-
-# Configuración de markup
-markup:
-  _merge: deep
-  highlight:
-    lineNos: false
-
-# Contenido relacionado
-related:
-  threshold: 80
-  includeNewer: true
-  toLower: true
-  indices:
-    - name: etiquetas
-      weight: 100
-    - name: categorias
-      weight: 70
-
-# Seguridad
-security:
-  _merge: deep
-
-# Parámetros del sitio
+# Params
 params:
-  # Meta información
   description: 'Investigación sobre ecosistemas de medios nativos digitales en Chile'
-  
-  # Información de contacto
   email: 'contacto@autonomed.cl'
-  phone: ''
-  
-  # Dirección
-  address:
-    street: ''
-    city: 'Santiago'
-    region: 'Región Metropolitana'
-    postcode: ''
-    country: 'Chile'
-    country_code: 'CL'
-  
-  # Coordenadas geográficas
-  coordinates:
-    latitude: '-33.4489'
-    longitude: '-70.6693'
-    
-  # Redes sociales
   twitter: 'autonomed_cl'
   
-  # Analíticas
-  google_analytics: '' # Agregar después
-  google_tag_manager: '' # Agregar después
+  # Address
+  address:
+    city: 'Santiago'
+    country: 'Chile'
+    country_code: 'CL'
